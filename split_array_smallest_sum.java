@@ -11,10 +11,10 @@ public class split_array_smallest_sum {
             end+=nums[i];
         }
 
-        while(start<=end){
+        while(start<end){
             int mid=(start+end)/2;
             int sum=0;
-            int pieces=-1;
+            int pieces=1;
             for(int num : nums){
                if(sum+num>mid){
                   sum=num;
