@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class leetcode_448 {
@@ -16,6 +17,12 @@ public class leetcode_448 {
                 i++;
             }
         }
-        
+        List<Integer> ans=new ArrayList<>();
+        for(int index=0;index<arr.length;index++){
+            if(arr[index]!=index+1){
+                ans.add(index+1);
+            }
+        }
+        return ans;
     }
 }
