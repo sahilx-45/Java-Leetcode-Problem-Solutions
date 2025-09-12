@@ -1,8 +1,9 @@
 public class missing_number {
     public static void main(String[] args) {
         int[]nums={0,2,1,4};
+        System.out.println(missingNumber(nums));
     }
-    public int missingNumber(int[] nums) {
+    public static int missingNumber(int[] nums) {
         int i=0;
         while(i<nums.length){
         int correct=nums[i];
